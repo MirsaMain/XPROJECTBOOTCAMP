@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply border border-yellow-500 bg-yellow-500 rounded-md px-5 py-2 duration-300;
+}
+
+.btn:hover {
+  @apply opacity-90;
+}
+
+.btn_outline {
+  @apply bg-transparent;
+}
+
+.btn_outline:hover {
+  @apply bg-yellow-500;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom styles for responsive design */
+@media (max-width: 768px) {
+  .sidebar-open {
+    transform: translateX(0);
+  }
+  .sidebar-closed {
+    transform: translateX(-100%);
+  }
+}
